@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onchange</title>
+</head>
+
+<style>
+    .colors {
+        padding: 50px 10px;
+        margin: 20px 0px;
+    }
+
+    .show-one div {
+        padding: 50px 10px;
+        margin: 20px 0px;
+        justify-content: center;
+        align-content: center;
+        font-size: 50px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .first {
+        background-color: pink;
+    }
+
+    .second {
+        background-color: green;
+    }
+
+    .third {
+        background-color: blue;
+    }
+
+
+</style>
+
+<body>
+    <div class="selector">
+        <select onchange="handleOnChangeEvent(this.value)">
+            <option value="">Select a color</option>
+            <option value="blue">blue</option>
+            <option value="green">green</option>
+            <option value="red">red</option>
+        </select>
+    </div>
+
+    <div class="colors"></div>
+
+    <div class="selectors">
+        <div class="op1" onclick="changeText('op1');">op1</div>
+        <div class="op2" onclick="changeText('op2');">op2</div>
+        <div class="op3" onclick="changeText('op3');">op3</div>
+    </div>
+
+    <div class="show-one">
+        <div class="first">
+            <p>op1 showing</p>
+        </div>
+        <div class="second" style="display: none;">
+            <p>op2 showing</p>
+        </div>
+        <div class="third" style="display: none;">
+            <p>op3 showing</p>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        function changeText(option) {
+
+            const on = "flex";
+            const off = "none";
+
+            if (option === 'op1') {
+                document.getElementsByClassName('first')[0].style.display = on;
+                document.getElementsByClassName('second')[0].style.display = off;
+                document.getElementsByClassName('third')[0].style.display = off;
+            }
+
+            if (option === 'op2') {
+                document.getElementsByClassName('second')[0].style.display = on;
+                document.getElementsByClassName('first')[0].style.display = off;
+                document.getElementsByClassName('third')[0].style.display = off;
+            }
+
+            if (option === 'op3') {
+                document.getElementsByClassName('third')[0].style.display = on;
+                document.getElementsByClassName('first')[0].style.display = off;
+                document.getElementsByClassName('second')[0].style.display = off;
+            }
+        }
+
+
+        
+
+        function handleOnChangeEvent(x) {
+            //document.bgColor = x;
+            const fuckingDivSSS = document.getElementsByClassName("colors");
+            const DIV = fuckingDivSSS[0];
+            DIV.style.backgroundColor = x;
+            console.log("color = ", x);
+        }
+    </script>
+</body>
+
+</html>

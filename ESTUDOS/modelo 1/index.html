@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link type="text/css" rel="stylesheet" href="style_slider.css" />
+    <link type="text/css" rel="stylesheet" href="style_selector.css" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>Weld Co</title>
+    <link rel="icon" type="image/x-icon" href="./src/ref/3.png">
+
+</head>
+
+<body>
+    <div class="navbar-container">
+        <div class="navbar">
+
+            <img class="logo" src="./src/ref/6-removebg-preview.png" alt="">
+            <ul>
+                <li>About</li>
+                <li>Services</li>
+                <li>WorkShops</li>
+                <li>Clients</li>
+                <li>Contact</li>
+            </ul>
+
+            <div class="social-icon">
+                <div class="box">
+                    <img src="./src/whatsapp.svg" alt="">
+                </div>
+                <div class="box">
+                    <img src="./src/youtube.svg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="hero">
+            <img src="./src/ref/6-removebg-preview.png" alt="">
+            <h1>THE BEST US WELDING COMPANY</h1>
+            <p>Specialized in AeroSpacial and Mechanical Industries</p>
+        </div>
+
+        <div class="about">
+            <div class="title-box">
+                <img src="./src/about.svg" alt="">
+                <h1>About</h1>
+            </div>
+
+            <p>Weld Co. is a stabilished company in Welding Services in the US.<br>
+                The biggest AeroSpacial and Mechanical Companies of the Country acquire various of our services in their
+                daily basis.<br>
+                We work following the most important Standart Regulamentations in the world to provide the most secure
+                and reliable
+                services in the market.</p>
+        </div>
+        <div class="clients">
+            <div class="title-box">
+                <img class="clients-img" src="./src/client.svg" alt="">
+                <h1>Clients</h1>
+            </div>
+
+            <div class="container-s swiper">
+                <div class="card-wrapper">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="./src/clients/base/tesla.jpg" alt="Card Image" class="card-image">
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="./src/clients/base/boeing.png" alt="Card Image" class="card-image">
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="./src/clients/base/nasa.jpg" alt="Card Image" class="card-image">
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="./src/clients/base/airbus.png" alt="Card Image" class="card-image">
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="./src/clients/base/pw.png" alt="Card Image" class="card-image">
+                            </a>
+                        </li>
+
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="./src/clients/base/embraer.png" alt="Card Image" class="card-image">
+                            </a>
+                        </li>
+
+                        <li class="card-item swiper-slide">
+                            <a href="#" class="card-link">
+                                <img src="./src/clients/base/rolls-royce.svg" alt="Card Image" class="card-image">
+                            </a>
+                        </li>
+
+                        <li class="card-item swiper-slide">
+                            <a href="#" class="card-link">
+                                <img src="./src/clients/base/bombardier.png" alt="Card Image" class="card-image">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="services">
+            <div class="title-box">
+                <img src="./src/services.svg" alt="">
+                <h1>Our Services</h1>
+            </div>
+
+            <div class="activities">
+                <div class="selectors">
+                    <button class="option op1" onclick="changeText('op1');">
+                        <img src="./src/engineer-worker.svg" alt="">
+                        <p>Engineering And Building</p>
+                    </button>
+                    <button class="option op2" onclick="changeText('op2');">
+                        <img src="./src/research-dev.svg" alt="">
+                        <p>Research And Development</p>
+                    </button>
+                    <button class="option op3" onclick="changeText('op3');">
+                        <img src="./src/industrial-robot-factory.svg" alt="">
+                        <p>Welding Engineering</p>
+                    </button>
+                </div>
+
+                <div class="show-one">
+                    <div class="first">
+                        <p>
+
+                        </p>
+                    </div>
+                    <div class="second" style="display: none;">
+                        <p>op2 showing</p>
+                    </div>
+                    <div class="third" style="display: none;">
+                        <p>op3 showing</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

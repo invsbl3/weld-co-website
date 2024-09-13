@@ -1,0 +1,98 @@
+.activities {
+    display: flex;
+    width: 100%;
+}
+
+.selectors {
+    width: 20%;
+    margin: 0;
+    display: block;
+    max-height: 100%;
+}
+
+.show-one {
+    width: 100%;
+}
+
+.show-one div {
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
+
+.option {
+    width: 100%;
+    background-color: yellow;
+    padding: 50px 20px 50px 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.option:hover img {
+    transform: scale(1.02);
+}
+
+.option:hover p {
+    transform: scale(1.02);
+}
+
+.option p {
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.option img {
+    background-color: yellow;
+    width: 100px;
+    display: block;
+    margin: auto;
+    align-self: center;
+    padding: 20px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: blue;
+}
+
+
+.option:focus {
+    background-color: red;
+}
+
+.option:focus img {
+    background-color: white;
+}
+
+.option:focus p {
+    color: white;
+}
+
+
+
+.first {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./src/services/1.png");
+    background-attachment: fixed;
+
+}
+
+.second {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./src/services/2.png");
+    background-attachment: fixed;
+
+}
+
+.third {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./src/services/3.png");
+    background-attachment: fixed;
+
+}

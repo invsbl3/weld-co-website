@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0px;
+    font-family: "Suse";
+    font-weight: 300;
+}
+
+.navbar-container {
+    box-shadow: 0px 4px 5px 0px rgba(191, 122, 122, 0.71);
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(191, 122, 122, 0.71);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(191, 122, 122, 0.71);
+    background: linear-gradient(144deg, rgba(255, 9, 9, 1) 0%, rgba(149, 0, 0, 1) 100%);
+    position: fixed;
+    width: 100%;
+    padding: 15px 5% 15px 5%;
+    z-index: 300;
+}
+
+.navbar {
+    width: 100%;
+    font-size: 14px;
+}
+
+.navbar .logo {
+    width: 150px;
+    object-fit: contain;
+}
+
+
+.navbar ul {
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    justify-self: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar ul li {
+    float: left;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.navbar ul li:hover {
+    transform: scale(1.05);
+}
+
+
+.social-icon {
+    display: flex;
+}
+
+.box {
+    background-color: yellow;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+.social-icon img {
+    width: 20px;
+    padding: 5px;
+    color: #fff;
+}
+
+
+.container {
+    margin: auto;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("./src/services/1.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.hero {
+    display: grid;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+.hero img {
+    width: 80%;
+    justify-self: center;
+}
+
+.hero p {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 50px;
+}
+
+
+
+h1 {
+    font-size: 40px;
+    font-family: "Verdana";
+    color: #000;
+    align-content: center;
+    justify-content: center;
+    text-transform: uppercase;
+    margin: 30px 0 30px 0;
+
+}
+
+p {
+    font-size: 18px;
+    font-family: "Verdana";
+    color: #000;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.hero p {
+    color: yellow;
+}
+
+.new-about {
+    width: 100%;
+    display: block;
+    background: transparent;
+}
+
+.new-about p {
+    padding: 20px;
+}
+
+.left {
+    width: 60%;
+    padding: 2% 10% 3% 3%;
+    background-color: white;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 80% 0%);
+    shape-outside: polygon(0% 0%, 0% 100%, 100% 100%, 80% 0%);
+    word-wrap: break-word;
+}
+
+.new-services {
+    width: 100%;
+    background: transparent;
+    margin-bottom: 40px;
+}
+
+.right {
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    padding: 2% 0% 3% 0%;
+    background-color: white;
+    word-wrap: break-word;
+}
+
+
+.right h1 {
+    padding-right: 3%;
+    text-align: right;
+    margin-left: auto;
+}
+
+.show-one {
+    padding: 30px 3% 30px 3%;
+}
+
+.show-one div ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.show-one ul li {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.extra-space {
+    height: 10vh;
+}
+
+
+
+
+
+@media(max-width:800px) {
+
+    .left {
+        width: 80%;
+    }
+
+    .right {
+        width: 90%;
+    }
+
+}
+
+@media(max-width:600px) {
+
+    .left,
+    .right {
+        clip-path: none;
+        width: 100%;
+    }
+}

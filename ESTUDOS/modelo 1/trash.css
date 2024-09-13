@@ -1,0 +1,19 @@
+.op1{
+    background-color: red;
+}
+.op1 img{
+    background-color: white;
+}
+.op1 p{
+    color: white;
+}
+
+.op2{
+    background-color: yellow;
+}
+.op2 img{
+    background-color: yellow;
+}
+.op2 p{
+    color: black;
+}

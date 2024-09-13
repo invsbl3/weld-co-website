@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link type="text/css" rel="stylesheet" href="style_slider.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="main">
+            <div class="contents">
+                <div class="content" id="intro"></div>
+                <div class="content" id="about"></div>
+                <div class="content" id="clients"></div>
+                <div class="content" id="eng"></div>
+                <div class="content" id="rd"></div>
+                <div class="content" id="weld"></div>
+            </div>
+            <div class="partners">
+                <div class="container-s swiper">
+                    <div class="card-wrapper">
+                        <ul class="card-list swiper-wrapper">
+                            <li class="card-item swiper-slide">
+                                <a href="" class="card-link">
+                                    <img src="./src/clients/base/tesla.jpg" alt="Card Image" class="card-image">
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="" class="card-link">
+                                    <img src="./src/clients/base/boeing.png" alt="Card Image" class="card-image">
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="" class="card-link">
+                                    <img src="./src/clients/base/nasa.jpg" alt="Card Image" class="card-image">
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="" class="card-link">
+                                    <img src="./src/clients/base/airbus.png" alt="Card Image" class="card-image">
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="" class="card-link">
+                                    <img src="./src/clients/base/pw.png" alt="Card Image" class="card-image">
+                                </a>
+                            </li>
+        
+                            <li class="card-item swiper-slide">
+                                <a href="" class="card-link">
+                                    <img src="./src/clients/base/embraer.png" alt="Card Image" class="card-image">
+                                </a>
+                            </li>
+        
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="./src/clients/base/rolls-royce.svg" alt="Card Image" class="card-image">
+                                </a>
+                            </li>
+        
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="./src/clients/base/bombardier.png" alt="Card Image" class="card-image">
+                                </a>
+                            </li>
+                        </ul>
+        
+                        <div class="swiper-pagination"></div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="selector">
+            <img src="./src/ref/6-removebg-preview.png" alt="">
+            <button id="button1" onclick="changeContent('intro')">
+                <h1>Main</h1>
+            </button>
+            <button onclick="changeContent('about')">
+                <img src="./src/about.svg" alt="">
+                <h1>About</h1>
+            </button>
+            <button onclick="changeContent('clients')">
+                <img src="./src/client.svg" alt="">
+                <h1>Clients</h1>
+            </button>
+            <button onclick="changeContent('eng')">
+                <img src="./src/engineer-worker.svg" alt="">
+                <h1>Engineering And Building</h1>
+            </button>
+            <button onclick="changeContent('rd')">
+                <img src="./src/research-dev.svg" alt="">
+                <h1>Research and Development</h1>
+            </button>
+            <button onclick="changeContent('weld')">
+                <img src="./src/industrial-robot-factory.svg" alt="">
+                <h1>Welding Engineering</h1>
+            </button>
+        </div>
+
+
+
+    </div>
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            document.getElementById('button1').click();
+        });
+        function changeContent(option) {
+            const on = "flex";
+            const off = "none";
+            const content = document.getElementsByClassName('content');
+            for (i = 0; i < content.length; i++) {
+                if (content[i].id == option) { content[i].style.display = on; }
+                else { content[i].style.display = off; }
+            };
+        };
+
+        new Swiper('.card-wrapper', {
+            // Optional parameters
+            loop: true,
+            spaceBetween: 30,
+            slidesPerView: 6,
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            autoplay: {
+                delay: 2000,
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 2
+                },
+                1024: {
+                    slidesPerView: 3
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

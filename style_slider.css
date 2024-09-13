@@ -1,0 +1,74 @@
+
+.container-s{
+    width: 100%;
+}
+
+.card-wrapper {
+    margin: 0 60px 0px;
+    padding: 20px 3%;
+    overflow: hidden;
+}
+
+.card-list {
+    list-style: none;
+    margin: 10px;
+    
+}
+
+.card-list .card-item .card-link {
+    user-select: none;
+    display: block;
+    background: #fff;
+    padding: 18px;
+    border-radius: 0px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card-list .card-item .card-link:active {
+    cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover {
+    border-color: #5372f0;
+    transition: 0.2s ease;
+    transform: scale(1.05);
+}
+
+.card-list .card-link .card-image {
+    width: 100%;
+    aspect-ratio: 2.5/1;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #5372f0;
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button {
+    color: #5372f0;
+    margin-top: -35px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-wrapper {
+        margin: 0 10px 25px;
+    }
+
+    .card-wrapper .swiper-slide-button {
+        display: none;
+    }
+}
+
+.swiper-slide{
+    width: 100%;
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link type="text/css" rel="stylesheet" href="style_slider.css" />
+    <link type="text/css" rel="stylesheet" href="style_selector.css" />
+    <link type="text/css" rel="stylesheet" href="style_footer.css" />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>Weld Co</title>
+    <link rel="icon" type="image/x-icon" href="./src/ref/3.png">
+
+</head>
+
+<body>
+    <div class="navbar-container">
+        <div class="navbar">
+
+            <img class="logo" src="./src/ref/6-removebg-preview.png" alt="">
+            <ul>
+                <li>About</li>
+                <li>Services</li>
+                <li>WorkShops</li>
+                <li>Clients</li>
+                <li>Contact</li>
+            </ul>
+
+
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="hero">
+            <img src="./src/ref/6-removebg-preview.png" alt="">
+            <h1>THE BEST US WELDING COMPANY</h1>
+            <p>Specialized in AeroSpacial and Mechanical Industries</p>
+        </div>
+
+        <div class="new-about">
+
+            <div class="left">
+                <h1>About</h1>
+
+                <p>Weld Co. is a stabilished company in Welding Services in the US.<br>
+                    The biggest AeroSpacial and Mechanical Companies of the Country acquire various of our services in
+                    their
+                    daily basis.<br>
+                    We work following the most important Standart Regulamentations in the world to provide the most
+                    secure
+                    and reliable
+                    services in the market.</p>
+
+                <h1>Clients</h1>
+                <p>Some of our Clients</p>
+            </div>
+            <div class="clients">
+                <div class="container-s swiper">
+                    <div class="card-wrapper">
+                        <ul class="card-list swiper-wrapper">
+                            <li class="card-item swiper-slide">
+                                <a href="" class="card-link">
+                                    <img src="./src/clients/base/tesla.jpg" alt="Card Image" class="card-image">
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="" class="card-link">
+                                    <img src="./src/clients/base/boeing.png" alt="Card Image" class="card-image">
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="" class="card-link">
+                                    <img src="./src/clients/base/nasa.jpg" alt="Card Image" class="card-image">
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="" class="card-link">
+                                    <img src="./src/clients/base/airbus.png" alt="Card Image" class="card-image">
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="" class="card-link">
+                                    <img src="./src/clients/base/pw.png" alt="Card Image" class="card-image">
+                                </a>
+                            </li>
+
+                            <li class="card-item swiper-slide">
+                                <a href="" class="card-link">
+                                    <img src="./src/clients/base/embraer.png" alt="Card Image" class="card-image">
+                                </a>
+                            </li>
+
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="./src/clients/base/rolls-royce.svg" alt="Card Image" class="card-image">
+                                </a>
+                            </li>
+
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="./src/clients/base/bombardier.png" alt="Card Image" class="card-image">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="new-services">
+            <div class="right">
+                <h1>Services</h1>
+                <div class="selectors">
+                    <button class="option empty"></button>
+                    <button class="option op1" onclick="changeText('op1');">
+                        <img src="./src/engineer-worker.svg" alt="">
+                        <p>Engineering And Building</p>
+                    </button>
+                    <button class="option op2" onclick="changeText('op2');">
+                        <img src="./src/research-dev.svg" alt="">
+                        <p>Research And Development</p>
+                    </button>
+                    <button class="option op3" onclick="changeText('op3');">
+                        <img src="./src/industrial-robot-factory.svg" alt="">
+                        <p>Welding Engineering</p>
+                    </button>
+                </div>
+
+                <div class="show-one">
+                    <div class="first">
+                        <ul>
+                            <li><strong>Custom Metal Fabrication</strong><br>  
+                              Tailored metal fabrication solutions using cutting-edge technology to create parts and structures with precision for aerospace and mechanical applications.
+                            </li>
+                            <li><strong>Structural Welding</strong><br>  
+                              Expertise in welding critical structural components for aerospace and mechanical systems, ensuring high strength and reliability.
+                            </li>
+                            <li><strong>Design and Engineering Consultation</strong><br>  
+                              Collaborative engineering support from concept to completion, providing design recommendations, feasibility assessments, and optimized welding solutions.
+                            </li>
+                            <li><strong>Prototype Development</strong><br>  
+                              Rapid prototyping and small-batch production for custom components, helping to bring new designs to life with aerospace-grade quality.
+                            </li>
+                            <li><strong>High-Precision TIG and MIG Welding</strong><br>  
+                              Specialized welding processes for thin metals, exotic alloys, and precision parts required in the aerospace sector, ensuring durability and accuracy.
+                            </li>
+                            <li><strong>CNC Machining and Metalworking</strong><br>  
+                              Combining welding with CNC machining for the creation of complex aerospace and mechanical parts, ensuring tight tolerances and high precision.
+                            </li>
+                            <li><strong>Heat Treatment and Stress Relief</strong><br>  
+                              Heat treatment services to enhance the durability and performance of welded components, reducing stress and improving material properties.
+                            </li>
+                            <li><strong>Certified Welding Inspections (CWI)</strong><br>  
+                              Offering certified welding inspections to ensure compliance with aerospace industry standards, ensuring every weld meets rigorous safety and performance criteria.
+                            </li>
+                            <li><strong>On-site Welding and Repairs</strong><br>  
+                              Mobile welding solutions for maintenance, repair, and installation services at client facilities, specializing in the unique needs of aerospace structures.
+                            </li>
+                            <li><strong>Robotic Welding Automation</strong><br>  
+                              Utilizing robotic welding systems for high-volume, high-precision production runs, reducing lead times and ensuring consistent quality.
+                            </li>
+                            <li><strong>Exotic Metals and Alloy Welding</strong><br>  
+                              Welding services for high-performance alloys like titanium, Inconel, and aluminum, used extensively in aerospace and mechanical applications.
+                            </li>
+                            <li><strong>Pressure Vessel Welding and Fabrication</strong><br>  
+                              Welding and fabrication of pressure vessels for aerospace systems, ensuring compliance with industry standards and maintaining structural integrity under high stress.
+                            </li>
+                            <li><strong>Nondestructive Testing (NDT)</strong><br>  
+                              Providing comprehensive NDT services to detect any flaws or defects in welded joints, ensuring the highest standards of safety and performance.
+                            </li>
+                            <li><strong>Clean Room Welding</strong><br>  
+                              Specialized welding in controlled environments for aerospace components requiring contaminant-free processes, ensuring optimal performance in critical systems.
+                            </li>
+                          </ul>
+                          
+                    </div>
+                    <div class="second" style="display: none;">
+                        <ul>
+                            <li><strong>Material Innovation and Testing</strong><br>  
+                              Research and testing of new welding materials, alloys, and composites to improve performance and reduce weight for aerospace and mechanical applications.
+                            </li>
+                            <li><strong>Welding Process Optimization</strong><br>  
+                              Developing and refining welding techniques and processes to enhance efficiency, precision, and cost-effectiveness for high-demand industries.
+                            </li>
+                            <li><strong>Advanced Simulation and Modeling</strong><br>  
+                              Utilizing computational models and simulations to predict welding outcomes, optimize designs, and reduce development time.
+                            </li>
+                            <li><strong>Robotics and Automation Development</strong><br>  
+                              Innovating and integrating cutting-edge robotic welding technologies for complex, high-precision applications in aerospace manufacturing.
+                            </li>
+                            <li><strong>Non-Destructive Evaluation (NDE) Techniques</strong><br>  
+                              Pioneering new methods for non-destructive evaluation of welds to ensure integrity and compliance with stringent industry standards.
+                            </li>
+                            <li><strong>New Welding Technologies Exploration</strong><br>  
+                              Researching emerging welding technologies like laser welding, friction stir welding, and additive manufacturing to offer groundbreaking solutions.
+                            </li>
+                            <li><strong>Thermal and Mechanical Analysis</strong><br>  
+                              Conducting thermal and mechanical stress analysis on welded components to assess performance in extreme conditions typical of aerospace applications.
+                            </li>
+                            <li><strong>Welding Standards and Compliance Research</strong><br>  
+                              Investigating industry standards and regulations to ensure that new welding techniques and materials meet the rigorous requirements of aerospace and mechanical sectors.
+                            </li>
+                            <li><strong>Prototype Testing and Validation</strong><br>  
+                              Building and testing prototypes in-house to validate the performance of welded components under real-world conditions.
+                            </li>
+                            <li><strong>Sustainability and Green Welding Solutions</strong><br>  
+                              Researching sustainable welding methods, materials, and processes that reduce environmental impact while maintaining high performance.
+                            </li>
+                          </ul>
+                          
+                    </div>
+                    <div class="third" style="display: none;">
+                        <ul>
+                            <li><strong>Weld Design and Analysis</strong><br>  
+                              Engineering the design and structural analysis of welded joints, ensuring optimal strength, durability, and compliance with aerospace and mechanical industry standards.
+                            </li>
+                            <li><strong>Weld Quality Control Systems</strong><br>  
+                              Developing and implementing advanced quality control systems to monitor weld integrity throughout the production process, ensuring consistent performance.
+                            </li>
+                            <li><strong>Finite Element Analysis (FEA) for Welds</strong><br>  
+                              Using FEA to predict the behavior of welded components under various stress conditions, optimizing the design for aerospace and mechanical applications.
+                            </li>
+                            <li><strong>Thermal Cycle Management</strong><br>  
+                              Engineering precise control of thermal cycles during the welding process to minimize residual stresses and distortions in sensitive aerospace components.
+                            </li>
+                            <li><strong>Weld Process Documentation</strong><br>  
+                              Creating detailed documentation of welding procedures, material specifications, and quality assurance plans for compliance with industry regulations.
+                            </li>
+                            <li><strong>Corrosion and Fatigue Resistance Engineering</strong><br>  
+                              Engineering welded structures with a focus on enhancing resistance to corrosion and fatigue, especially in high-performance aerospace environments.
+                            </li>
+                            <li><strong>Weldability Assessments for New Materials</strong><br>  
+                              Conducting weldability studies on emerging materials and alloys, determining their suitability for high-stress aerospace and mechanical applications.
+                            </li>
+                            <li><strong>Post-Weld Heat Treatment Engineering</strong><br>  
+                              Designing post-weld heat treatment processes to improve the mechanical properties of welded joints and reduce the likelihood of failures.
+                            </li>
+                            <li><strong>Distortion Control Engineering</strong><br>  
+                              Engineering solutions to control and minimize distortion in large or complex welded assemblies, maintaining dimensional accuracy.
+                            </li>
+                            <li><strong>Metallurgical Failure Analysis</strong><br>  
+                              Investigating and analyzing failed welded joints to determine the root cause, providing recommendations for design or process improvements.
+                            </li>
+                          </ul>
+                          
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        
+
+        <div class="footer">
+            <div class="footer-menus">
+
+                <div class="footer-menu diff">
+                    <img src="./src/ref/6-removebg-preview.png" alt="">
+                </div>
+
+                <div class="footer-menu">
+                    <h1>Opening Hours</h1>
+                    <table>
+                        <tr>
+                            <td>Monday to Saturday:</td>
+                            <td>08h - 23h</td>
+                        </tr>
+                        <tr>
+                            <td>Sundays and Holydays:</td>
+                            <td>08h - 18h</td>
+                        </tr>
+                    </table>
+                </div>
+
+
+                <div class="footer-menu">
+                    <h1>About Us</h1>
+                    <ul>
+                        <li>Our Business</li>
+                        <li>Our History</li>
+                        <li>Customer Service</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu">
+                    <h1>Social Impact</h1>
+                    <ul>
+                        <li>Environment</li>
+                        <li>People</li>
+                        <li>Clean Energy</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>2024 &#174; Weld Co. All Rights Reserved.</p>
+            </div>
+
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
